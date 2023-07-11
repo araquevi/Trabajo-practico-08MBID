@@ -1,0 +1,174 @@
+<div id="app">
+  <span class="negrita">Nombre:</span>Víctor Araque
+  <br />
+  <span class="negrita">URL:</span>
+  <a href="https://js-zwo4br.stackblitz.io" target="_blank">
+    https://js-zwo4br.stackblitz.io
+  </a>
+  <br />
+  <span class="negrita">GitHub:</span>
+  <a
+    href="https://github.com/araquevi/08MBID---Visualizacion-de-Datos"
+    target="_blank"
+  >
+    https://github.com/araquevi/08MBID---Visualizacion-de-Datos
+  </a>
+  <h1>Visualización - Trabajo Práctico</h1>
+  <h2>Introducción</h2>
+  <body>
+    Este trabajo práctico de la asignatura 08MBID (Visualización de datos),
+    muestra la visualización de unos datos correspondientes a una base de datos
+    con información acerca de una web de venta de coches. Adjunto el enlace
+    pertinente a la base de datos utilizada, donde he seleccionado el fichero
+    <a href="https://www.kaggle.com/datasets/chancev/carsforsale">
+      cars_raw.csv
+    </a>
+    encontrado en Kaggle, concretamente en CarsForSale. <br />
+    Destacar que este dataset ha sido utilizado en una asignatura anterior, en
+    este caso en 05MBID (Minería de datos). <br />
+    <br />
+    Las visualizaciones realizadas en este trabajo, tienen como principal
+    objetivo mostrar a los responsables de esta web de coches, cuáles son los
+    coches y vendedores que reocoge su web, incluso pudiendo realizar así un
+    estudio de mercado en función de las visualizaciones obtenidas, de manera
+    que podrán descubrir a que tipo de clientes deben dirigirse con mayor
+    enfoque o en qué aspectos deben mejorar.
+  </body>
+  <br />
+  <h2>Metodología</h2>
+  <body>
+    La metodología seguida en este trabajo serán visualizaciones generadas en
+    Google Sheets, Datawrapper y uso de Python mediante Google Colab.
+    <br />
+    En este PDF se recogen una serie de gráficos en los que se pueden observar:
+    <ul>
+      <li>
+        Gráfico de relación (scatterplot) entre el año de fabricación y el
+        precio (Datawrapper)
+      </li>
+      <li>Mapa geográfico (Google Sheets)</li>
+      <li>Gráfico de columnas (Google Sheets)</li>
+      <li>Gráfico de tabla (Google Sheets)</li>
+      <li>Gráfico de barras (Google collab)</li>
+    </ul>
+  </body>
+  <br />
+  <h2>Resultados</h2>
+  <body>
+    Este primer gráfico es de gran utilidad para poder observar la relación
+    existente entre la variable año, que recoge el año de fabricación del
+    vehículo, y la variable precio de venta. <br />Como se puede observar y era
+    un poco de esperar, a medida que los coches son más nuevos su precio medio
+    es superior a los antiguos. Cabe destacar que siempre puede existir alguna
+    excecpión ya que pueden influir otros factores como es el estado en el que
+    se encuentra el vehículo.
+  </body>
+  <br />
+  <br />
+  <iframe
+    title="Relación entre año de fabricación y precio"
+    aria-label="Scatter Plot"
+    id="datawrapper-chart-wZ4ye"
+    src="https://datawrapper.dwcdn.net/wZ4ye/1/"
+    scrolling="no"
+    frameborder="0"
+    style="border: none"
+    width="600"
+    height="564"
+    data-external="1"
+  ></iframe>
+  <br />
+  <br />
+  <body>
+    En este segundo gráfico, he querido transmitir la información geográfica
+    mediante un mapa. En este mapa se muestra como se distribuyen los coches
+    recogidos en la web a lo largo del territorio americano. <br />Fácilmente se
+    ve reflejado (en un tono de color más oscuro), los estados de Texas,
+    California y Florida son los más influyentes en esta web.
+  </body>
+  <br />
+  <iframe
+    width="600"
+    height="371"
+    seamless
+    frameborder="0"
+    scrolling="no"
+    src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTdUm6UivAozGWboIxkLKcY9XIfwRWYbMVUZ4bAKKkwtLWhqTH5f7ynU3T6J_OJp1ZI4-9Zn01LNBka/pubchart?oid=589950175&amp;format=interactive"
+  ></iframe>
+  <br />
+  <br />
+  <body>
+    También he considerado importante mostrar cuáles son las marcas de coches
+    más frecuentadas en la web, para poder saber a qué tipo de público nos
+    podemos dirigir con mayor facilidad o que marcas faltarían por reforzar.
+    <br />Para ello he utilizado un gráfico de columnas, permitiendo observar
+    las diferencias con claridad, pero tal y como hemos visto en teoría, al
+    utilizar un dataset grande con muchos valores, este tipo de gráfico puede
+    ser confuso por lo que he decidido plantear una alternativa a este.
+  </body>
+  <br />
+  <iframe
+    width="600"
+    height="371"
+    seamless
+    frameborder="0"
+    scrolling="no"
+    src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTdUm6UivAozGWboIxkLKcY9XIfwRWYbMVUZ4bAKKkwtLWhqTH5f7ynU3T6J_OJp1ZI4-9Zn01LNBka/pubchart?oid=1403694222&amp;format=interactive"
+  ></iframe>
+  <br />
+  <body>
+    Como he mencionado anteriormente, el gráfico de columnas no se adaptaba
+    correctamente a nuestro dataset, decantándome así por un gráfico de tabla,
+    en el cuál podemos identificar con claridad las marcas, y el número de
+    coches de cada marca que existen en la web. Entre ellos, observamos una gran
+    cantidad de coches de gama media-alta como pueden ser marcas como Mercedes,
+    BMW o Jeep.
+  </body>
+  <br />
+  <br />
+  <iframe
+    width="600"
+    height="371"
+    seamless
+    frameborder="0"
+    scrolling="no"
+    src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTdUm6UivAozGWboIxkLKcY9XIfwRWYbMVUZ4bAKKkwtLWhqTH5f7ynU3T6J_OJp1ZI4-9Zn01LNBka/pubchart?oid=853659275&amp;format=interactive"
+  ></iframe>
+  <br />
+  <br />
+  <br />
+  <body>
+    Por último, pero no menos importante, es fundamental conocer cuál es la
+    valoración que tienen los clientes acerca de los vendedores de la web y como
+    son. Por este motivo, he decidido visualizar esta información mediante un
+    gráfico de barras, ya que en este caso si se adapta a las condiciones al
+    tener pocas categorías. <br />Analizando los resultados, se puede visualizar
+    como la mayoría de vendedores se encuentran en la media, siendo un aspecto
+    que parece ser mejorable.
+  </body>
+  <br />
+  <br />
+  <img
+    src="https://stackblitz.com/storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBNHBIQmc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--7b786a3adaec66e526ea5e07837214560ff11798/descarga.png"
+    alt="Como"
+    width="600"
+    height="371"
+  />
+  <br />
+  <h2>Conclusiones</h2>
+  <body>
+    Finalmente, tras haber realizado este trabajo y haber observado los datos
+    relevantes recogidos en esta página web, considero que el margen de mejora y
+    de crecimiento es muy amplio. Como he ido remarcando en las diferentes
+    visualizaciones, la gran mayoría de vehículos se recogen en unos estados o
+    regiones muy concretas, y una gran cantidad de marcas son minoritarias,
+    dejando entrever que son dos áreas en las que se puede mejorar ya sea
+    mediante campañas publicitarias o marketing de la web. <br />Por otro lado,
+    hemos evidenciado como el tipo de vendedores existentes en la web y las
+    valoraciones que tienen son algo mediocres. Para mejorar este aspecto, se
+    podría implementar un sistema de niveles con recompensas por ejemplo.<br />
+    Para terminar este trabajo, me gustaría remarcar la importancia de una buena
+    visualización de los datos, ya que como se ha podido demostrar, es una buena
+    forma de comprender el tema bajo estudio.
+  </body>
+</div>
